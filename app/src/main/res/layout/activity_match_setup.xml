@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1B1B"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEW MATCH"
+        android:textColor="#F5C518"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opponent Team"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etOpponentTeam"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="e.g. Tigers XI"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:padding="12dp"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Match Date"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etMatchDate"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/edittext_bg"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:padding="12dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="none" />
+
+    <Button
+        android:id="@+id/btnStartLogging"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:backgroundTint="#F5C518"
+        android:text="START LOGGING"
+        android:textColor="#1B1B1B"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+</LinearLayout>

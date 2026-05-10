@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1B1B">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY PROFILE"
+            android:textColor="#F5C518"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player Name"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etPlayerName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:background="#2E2E2E"
+            android:hint="Enter your name"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#666666"
+            android:padding="12dp"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team Name (optional)"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etTeamName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:background="#2E2E2E"
+            android:hint="Enter your team name"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#666666"
+            android:padding="12dp"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Position"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp">
+
+            <RadioButton
+                android:id="@+id/rbRaider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raider"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#F5C518"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbDefender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Defender"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#F5C518" />
+
+            <RadioButton
+                android:id="@+id/rbAllRounder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All-Rounder"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#F5C518" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="#F5C518"
+            android:text="SAVE PROFILE"
+            android:textColor="#1B1B1B"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
